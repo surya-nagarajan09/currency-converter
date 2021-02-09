@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <title>Document</title>
+</head>
+<body>
+    <h class="head">CURRENCY CONVERTER</h><br>
+    <label>USD</label><br>
+    <input id="inputusd" type="number" placeholder="US Dollars(USD)" oninput="usdollarconverter(this,value)" onchange="usdollarconverter(this.value)">  <p class="result">USD:<span id="outputusd"></span></p>
+
+
+    <label>INR</label><br>
+    <input id="inputinr" type="number" placeholder="INDIAN Rupees(INR)" oninput="rupeesConverter(this,value)" onchange="rupeesConverter(this.value)"><p class="result">INR:<span id="outputinr"></span></p>
+
+    <label>YEN</label><br>
+    <input id="inputyen" type="number" placeholder="JAPANESE Yen(YEN)" oninput="yenConverter(this,value)" onchange="yenConverter(this.value)"><p class="result">YEN:<span id="outputyen"></span></p>
+
+
+    <label>AUD</label><br>
+    <input id="inputaud" type="number" placeholder="AUSTRALIAN Dollars(AUD)" oninput="ausdollarConverter(this,value)" onchange="ausdollarConverter(this.value)"><p class="result">AUD:<span id="outputaus"></span></p>
+
+    <label>MYR</label><br>
+    <input id="inputmyr" type="number" placeholder="MALAYSIAN Ringitt(MYR)" oninput="malaysianConverter(this,value)" onchange="malaysianConverter(this.value)"><p class="result">MYR:<span id="outputmyr"></span></p>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
